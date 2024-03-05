@@ -1,0 +1,130 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+    background-color: #ff8577; /* Naranja */
+    padding: 20px 0;
+}
+
+.nav-menu {
+    list-style-type: none;
+}
+
+.nav-menu li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilos de la sección de inicio */
+
+.home-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://cdn.pixabay.com/photo/2016/01/02/00/44/empanadas-1117284_1280.jpg'); /* Reemplaza 'tu-imagen-de-fondo.jpg' con la URL de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.5); /* Reduce el brillo para oscurecer la imagen */
+}
+
+.containerimg {
+    z-index: 1;
+    position: relative;
+}
+
+.container h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+/* Estilos de la sección de tarjetas de productos */
+.cards-section {
+    background-color: #f8d7da; /* Rosa */
+    padding: 100px 0;
+}
+
+.product-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.price {
+    font-weight: bold;
+    color: #ff8577; /* Naranja */
+}
+
+/* Estilos del footer */
+.footer {
+    background-color: #fff;
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-icons {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.social-icons li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: auto;
+}
