@@ -12,15 +12,32 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    /* max-width: 1200px;  */
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+
 }
 
 /* Estilos de la barra de navegación */
 .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     background-color: #ff8577; /* Naranja */
     padding: 20px 0;
+}
+
+.navbar-container {
+    position: relative;
+    z-index: 2; /* Asegura que la barra de navegación esté por encima del contenido */
+}
+
+
+.logo a {
+    font-size: 30px;
 }
 
 .nav-menu {
@@ -35,12 +52,15 @@ body {
 .nav-menu li a {
     text-decoration: none;
     color: #fff;
+    font-size: 25px;    
 }
 
 /* Estilos de la sección de inicio */
 
 .home-section {
-    position: relative;
+    /*position: relative;  */
+    display: flex;
+    justify-content: center;
     height: 100vh;
     overflow: hidden;
     color: #fff;
@@ -77,26 +97,36 @@ body {
 }
 
 /* Estilos de la sección de tarjetas de productos */
+
+.containerr {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Ajusta el padding según sea necesario */
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+    justify-content: space-around; /* Ajustar el espacio entre las tarjetas */
+}
+
+
 .cards-section {
     background-color: #f8d7da; /* Rosa */
     padding: 100px 0;
-}
 
-.product-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 20px;
 }
 
 .product-card {
+    flex: 1 1 calc(25% - 20px); /* Tamaño de cada tarjeta (25% con 20px de espacio entre ellas) */
+    margin: 10px; /* Espacio entre las tarjetas */
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    text-align: center; /* Alinear el contenido al centro */
+    box-sizing: border-box; /* Asegurar que el padding no afecte el tamaño total de la tarjeta */
 }
 
 .product-card img {
-    width: 100%;
+    max-width: 100%; /* Ajustar la imagen al ancho máximo del contenedor */
     border-radius: 8px;
 }
 
